@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@distube/ytdl-core": "^4.15.9",
+    "assemblyai": "^4.8.0",
+    "fs": "^0.0.1-security",
+    "openai": "^4.80.1",
+    "path": "^0.12.7",
+    "ytdl-core": "^4.11.5",
+    "ytdl-mp3": "^5.2.0"
+  },
+  "name": "ytnode",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

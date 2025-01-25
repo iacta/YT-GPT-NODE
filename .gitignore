@@ -1,0 +1,14 @@
+# Ignorar node_modules
+node_modules/
+
+# Ignorar arquivos de lock (opcional)
+# Não versionar o package-lock.json pode afetar a consistência entre instalações
+package-lock.json
+
+# Ignorar arquivos MP3
+*.mp3
+
+# Ignorar outros arquivos temporários
+*.log
+*.env
+*.sqlite
