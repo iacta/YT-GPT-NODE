@@ -1,17 +1,19 @@
 
 import { AssemblyAI } from 'assemblyai';
-import ytdl from 'ytdl-core';
-import fs from 'fs';
 import { Downloader } from 'ytdl-mp3';
 import OpenAI from "openai";
+import dotenv from 'dotenv';
+
+// Carregar variáveis de ambiente do arquivo .env
+dotenv.config();
 
 const openai = new OpenAI({
-  organization: "org-EGi6yzqNANbdshq68TA02DQm",
-  project: "proj_6wNxXCjLPMKBsiPCUVOIIb3L",
+  organization: process.env.OPENAI_ORG,
+  project: process.env.OPENAI_PROJECT,
 });
 
 const client = new AssemblyAI({
-  apiKey: '2ece4dbec4784b92b64e54ed7951013e',
+  apiKey: process.env.ASSEMBLYAI_API_KEY,
 });
 
 async function downloadAudio(url) {
